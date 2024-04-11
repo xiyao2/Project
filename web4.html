@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Tailwind Layout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="bg-gray-100">
+    <!-- Main container -->
+    <div class="flex flex-col lg:flex-row h-screen overflow-hidden">
+        
+        <!-- Navigation Bar, with increased padding on smaller screens -->
+        <div class="bg-indigo-500 text-white lg:w-48 py-8 px-4 lg:px-8 flex justify-around lg:flex-col lg:justify-start items-center lg:items-start flex-wrap lg:flex-nowrap lg:overflow-y-auto">
+            <!-- Navigation content goes here -->
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        <!-- Main Content Area -->
+        <div class="flex-1 flex flex-col lg:flex-row overflow-y-auto">
+            <!-- Light Purple Section (2/3rd) -->
+            <div class="lg:flex-2 bg-purple-200 p-4 flex-grow">
+                <!-- Top Bar -->
+                <div class="flex justify-between items-center mb-6 ml-2">
+                    <h1 class="text-lg lg:text-xl xl:text-2xl font-bold text-black">Dashboard</h1>
+                    <input type="search" placeholder="Search..." class="px-2 py-1 border rounded-lg text-xs lg:text-sm xl:text-base">
+                    <div class="ml-2 flex items-center">
+                        <!-- First Icon - Calendar -->
+                        <svg class="w-8 h-8 md:w-8 md:h-8 lg:w-8 lg:h-8 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            
+                                <path d="M2.4021 0C1.09043 0 0.0271041 1.06332 0.0271041 2.375V2.375C0.0271041 3.68668 1.09043 4.75 2.4021 4.75H16.625C17.9367 4.75 19 3.68668 19 2.375V2.375C19 1.06332 17.9367 0 16.625 0H2.4021ZM0 7.125C0.0149692 7.125 0.0271041 7.13713 0.0271041 7.1521V18.7862C0.0271041 18.905 0.135521 19 0.271041 19H18.729C18.8645 19 18.9729 18.905 18.9729 18.7862V10.125C18.9729 8.46814 17.6297 7.125 15.9729 7.125H0V7.125ZM2.73752 10.6875C2.73752 10.0317 3.26918 9.5 3.92502 9.5H4.26043C4.91627 9.5 5.44793 10.0317 5.44793 10.6875V10.6875C5.44793 11.3433 4.91627 11.875 4.26043 11.875H3.92502C3.26918 11.875 2.73752 11.3433 2.73752 10.6875V10.6875ZM8.15834 10.6875C8.15834 10.0317 8.69001 9.5 9.34584 9.5H9.68126C10.3371 9.5 10.8688 10.0317 10.8688 10.6875V10.6875C10.8688 11.3433 10.3371 11.875 9.68126 11.875H9.34585C8.69001 11.875 8.15834 11.3433 8.15834 10.6875V10.6875ZM13.5792 10.6875C13.5792 10.0317 14.1108 9.5 14.7667 9.5H15.1021C15.7579 9.5 16.2896 10.0317 16.2896 10.6875V10.6875C16.2896 11.3433 15.7579 11.875 15.1021 11.875H14.7667C14.1108 11.875 13.5792 11.3433 13.5792 10.6875V10.6875ZM2.73752 15.4375C2.73752 14.7817 3.26918 14.25 3.92502 14.25H4.26043C4.91627 14.25 5.44793 14.7817 5.44793 15.4375V15.4375C5.44793 16.0933 4.91627 16.625 4.26043 16.625H3.92502C3.26918 16.625 2.73752 16.0933 2.73752 15.4375V15.4375ZM8.15834 15.4375C8.15834 14.7817 8.69001 14.25 9.34584 14.25H9.68126C10.3371 14.25 10.8688 14.7817 10.8688 15.4375V15.4375C10.8688 16.0933 10.3371 16.625 9.68126 16.625H9.34585C8.69001 16.625 8.15834 16.0933 8.15834 15.4375V15.4375Z" fill="black"/>
+                                </svg>
+                                
+                                </svg>
+                               
+                        <!-- Second Icon - Bell -->
+                        <svg class="w-9 h-9 md:w-9 md:h-9 lg:w-9 lg:h-9" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                           
+                                <path d="M1 14.2093H4.62114H8.96651H12.5877L11.5702 13.0911C11.2942 12.7879 11.1392 12.3766 11.1392 11.9478V9.43407C11.1392 7.35492 9.93001 5.58612 8.24228 4.93059V4.65887C8.24228 3.77978 7.59379 3.06714 6.79383 3.06714C5.99387 3.06714 5.34537 3.77978 5.34537 4.65887V4.93059C3.65764 5.58612 2.44846 7.35492 2.44846 9.43407V11.9478C2.44846 12.3766 2.29343 12.7879 2.01749 13.0911L1 14.2093Z" fill="#272729" stroke="#33242D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <ellipse cx="6.5" cy="16.5" rx="2.5" ry="1.5" fill="#272729"/>
+                                <circle cx="12.5" cy="2.5" r="2.5" fill="#D9140F"/>
+                                </svg>
+                                        
+                        
+                    </div>
+                </div>
+                <!-- Additional Content Here -->
+                <p class="text-gray-500 text-sm mb-4">Hi James, Good Morning!</p>
+                <div class="flex justify-center flex-wrap gap-4 lg:gap-8">
+                    <!-- White Squares -->
+                   
+                   
+                    <div class="w-40 h-48 bg-white rounded-lg mb-8 flex flex-col justify-center items-center">
+                        <!-- 大号黑色粗体文字 -->
+                        <h2 class="text-xl font-bold text-black mb-4">$597</h2>
+                    
+                        <!-- 缩小的 SVG 图片 -->
+                        <div class="w-16 h-16 mb-4">
+                            <!-- 插入您的调整后的 SVG 图片代码 -->
+                            <svg width="70" height="70" viewBox="0 0 92 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="92" height="18" rx="9" fill="#6856F0"/>
+                                <rect y="52" width="92" height="18" rx="9" fill="#6856F0"/>
+                                <rect y="9" width="92" height="9" rx="1" fill="#6856F0"/>
+                                <rect y="29" width="92" height="32" rx="1" fill="#6856F0"/>
+                                <rect x="10" y="38" width="19" height="19" rx="6" fill="#FEFEFF"/>
+                                </svg>
+                                
+                                <!-- 调整后的 SVG 图片内容 -->
+                            </svg>
+                        </div>
+                    
+                        <!-- 灰色小字体文字，居中对齐 -->
+                        <p class="text-sm text-gray-500 text-center">Shopping Debit & Credit Card</p>
+                    </div>
+
+                    
+                    
+                    <div class="w-40 h-48 bg-white rounded-lg mb-8 flex flex-col justify-center items-center">
+                        <!-- 大号黑色粗体文字 -->
+                        <h2 class="text-xl font-bold text-black mb-4">$875</h2>
+                    
+                        <!-- 缩小的 SVG 图片 -->
+                        <div class="w-16 h-16 mb-4">
+                            <!-- 插入您的调整后的 SVG 图片代码 -->
+                            <svg width="70" height="70" viewBox="0 0 95 87" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14 66H1V86.5H64L92.5 66L93.5 64L94 62.5V60.5L93.5 59L93 58L92.5 57.5L91 56.5L89.5 56H87L85 57L64 72H42V65H59L60 64.5L61 64L62 62.5L62.5 61.5V60.5V59.5L62 58.5L61 57.5L59.5 57H29L24 58.5L18 62.5L14 66Z" fill="#6855E3" stroke="#6855E3"/>
+                                <mask id="path-2-outside-1_101_16" maskUnits="userSpaceOnUse" x="35" y="6" width="23" height="39" fill="black">
+                                <rect fill="white" x="35" y="6" width="23" height="39"/>
+                                <path d="M37.6602 35.7812L39.1445 33.3594C39.9258 33.9714 40.694 34.4857 41.4492 34.9023C42.2044 35.306 42.9661 35.6055 43.7344 35.8008C44.5026 35.9961 45.2773 36.0938 46.0586 36.0938C47.2174 36.0938 48.2331 35.8984 49.1055 35.5078C49.9779 35.1172 50.6549 34.5768 51.1367 33.8867C51.6315 33.1836 51.8789 32.3763 51.8789 31.4648C51.8789 30.4622 51.599 29.6354 51.0391 28.9844C50.4922 28.3333 49.7826 27.7799 48.9102 27.3242C48.0378 26.8555 47.1198 26.4193 46.1562 26.0156C45.2969 25.638 44.4505 25.2474 43.6172 24.8438C42.7839 24.4401 42.0286 23.9714 41.3516 23.4375C40.6745 22.8906 40.1341 22.2396 39.7305 21.4844C39.3268 20.7161 39.125 19.7917 39.125 18.7109C39.125 16.888 39.7109 15.3776 40.8828 14.1797C42.0677 12.9688 43.6367 12.2331 45.5898 11.9727V8.35938H47.7188V11.8945C48.7344 11.9336 49.75 12.0964 50.7656 12.3828C51.7812 12.6562 52.7643 13.0469 53.7148 13.5547L52.4844 16.0938C51.6901 15.612 50.8372 15.2474 49.9258 15C49.0273 14.7396 48.1549 14.6094 47.3086 14.6094C45.8372 14.6094 44.6328 14.987 43.6953 15.7422C42.7578 16.4974 42.2891 17.474 42.2891 18.6719C42.2891 19.5833 42.5495 20.3451 43.0703 20.957C43.6042 21.569 44.3008 22.0964 45.1602 22.5391C46.0195 22.9818 46.931 23.418 47.8945 23.8477C48.7539 24.2253 49.6003 24.6289 50.4336 25.0586C51.2799 25.4753 52.0482 25.9701 52.7383 26.543C53.4414 27.1159 54.0013 27.7995 54.418 28.5938C54.8346 29.375 55.043 30.3255 55.043 31.4453C55.043 32.7604 54.737 33.9323 54.125 34.9609C53.513 35.9896 52.6602 36.8294 51.5664 37.4805C50.4727 38.1315 49.1901 38.5482 47.7188 38.7305V42.3438H45.5898V38.8086C44.1706 38.7435 42.7839 38.457 41.4297 37.9492C40.0755 37.4284 38.819 36.7057 37.6602 35.7812Z"/>
+                                </mask>
+                                <path d="M37.6602 35.7812L39.1445 33.3594C39.9258 33.9714 40.694 34.4857 41.4492 34.9023C42.2044 35.306 42.9661 35.6055 43.7344 35.8008C44.5026 35.9961 45.2773 36.0938 46.0586 36.0938C47.2174 36.0938 48.2331 35.8984 49.1055 35.5078C49.9779 35.1172 50.6549 34.5768 51.1367 33.8867C51.6315 33.1836 51.8789 32.3763 51.8789 31.4648C51.8789 30.4622 51.599 29.6354 51.0391 28.9844C50.4922 28.3333 49.7826 27.7799 48.9102 27.3242C48.0378 26.8555 47.1198 26.4193 46.1562 26.0156C45.2969 25.638 44.4505 25.2474 43.6172 24.8438C42.7839 24.4401 42.0286 23.9714 41.3516 23.4375C40.6745 22.8906 40.1341 22.2396 39.7305 21.4844C39.3268 20.7161 39.125 19.7917 39.125 18.7109C39.125 16.888 39.7109 15.3776 40.8828 14.1797C42.0677 12.9688 43.6367 12.2331 45.5898 11.9727V8.35938H47.7188V11.8945C48.7344 11.9336 49.75 12.0964 50.7656 12.3828C51.7812 12.6562 52.7643 13.0469 53.7148 13.5547L52.4844 16.0938C51.6901 15.612 50.8372 15.2474 49.9258 15C49.0273 14.7396 48.1549 14.6094 47.3086 14.6094C45.8372 14.6094 44.6328 14.987 43.6953 15.7422C42.7578 16.4974 42.2891 17.474 42.2891 18.6719C42.2891 19.5833 42.5495 20.3451 43.0703 20.957C43.6042 21.569 44.3008 22.0964 45.1602 22.5391C46.0195 22.9818 46.931 23.418 47.8945 23.8477C48.7539 24.2253 49.6003 24.6289 50.4336 25.0586C51.2799 25.4753 52.0482 25.9701 52.7383 26.543C53.4414 27.1159 54.0013 27.7995 54.418 28.5938C54.8346 29.375 55.043 30.3255 55.043 31.4453C55.043 32.7604 54.737 33.9323 54.125 34.9609C53.513 35.9896 52.6602 36.8294 51.5664 37.4805C50.4727 38.1315 49.1901 38.5482 47.7188 38.7305V42.3438H45.5898V38.8086C44.1706 38.7435 42.7839 38.457 41.4297 37.9492C40.0755 37.4284 38.819 36.7057 37.6602 35.7812Z" fill="#6D54EB"/>
+                                <path d="M37.6602 35.7812L35.955 34.7361L35.0316 36.2427L36.4129 37.3447L37.6602 35.7812ZM39.1445 33.3594L40.3779 31.7849L38.6117 30.4014L37.4393 32.3143L39.1445 33.3594ZM41.4492 34.9023L40.4831 36.6535L40.4947 36.6599L40.5065 36.6662L41.4492 34.9023ZM51.1367 33.8867L49.5011 32.7357L49.4968 32.7419L51.1367 33.8867ZM51.0391 28.9844L49.5077 30.2708L49.5151 30.2797L49.5227 30.2885L51.0391 28.9844ZM48.9102 27.3242L47.9635 29.086L47.9738 29.0915L47.9841 29.0969L48.9102 27.3242ZM46.1562 26.0156L45.3517 27.8467L45.3675 27.8536L45.3835 27.8603L46.1562 26.0156ZM41.3516 23.4375L40.0949 24.9934L40.104 25.0008L40.1133 25.008L41.3516 23.4375ZM39.7305 21.4844L37.96 22.4146L37.9633 22.4209L37.9666 22.4271L39.7305 21.4844ZM40.8828 14.1797L39.4533 12.7809L39.4531 12.7811L40.8828 14.1797ZM45.5898 11.9727L45.8542 13.9551L47.5898 13.7237V11.9727H45.5898ZM45.5898 8.35938V6.35938H43.5898V8.35938H45.5898ZM47.7188 8.35938H49.7188V6.35938H47.7188V8.35938ZM47.7188 11.8945H45.7188V13.8191L47.6419 13.8931L47.7188 11.8945ZM50.7656 12.3828L50.2227 14.3077L50.2342 14.3109L50.2457 14.314L50.7656 12.3828ZM53.7148 13.5547L55.5146 14.4269L56.3531 12.6967L54.6573 11.7907L53.7148 13.5547ZM52.4844 16.0938L51.4472 17.8038L53.3259 18.9433L54.2842 16.966L52.4844 16.0938ZM49.9258 15L49.369 16.9209L49.3854 16.9257L49.4019 16.9302L49.9258 15ZM43.0703 20.957L41.5472 22.2533L41.5551 22.2626L41.5632 22.2718L43.0703 20.957ZM47.8945 23.8477L47.08 25.6743L47.09 25.6787L47.8945 23.8477ZM50.4336 25.0586L49.517 26.8362L49.5335 26.8447L49.5502 26.8529L50.4336 25.0586ZM52.7383 26.543L51.4608 28.0818L51.4678 28.0876L51.4749 28.0934L52.7383 26.543ZM54.418 28.5938L52.6468 29.5229L52.6533 29.5349L54.418 28.5938ZM47.7188 38.7305L47.4728 36.7456L45.7188 36.963V38.7305H47.7188ZM47.7188 42.3438V44.3438H49.7188V42.3438H47.7188ZM45.5898 42.3438H43.5898V44.3438H45.5898V42.3438ZM45.5898 38.8086H47.5898V36.8982L45.6815 36.8107L45.5898 38.8086ZM41.4297 37.9492L40.7117 39.8159L40.7196 39.8189L40.7274 39.8219L41.4297 37.9492ZM39.3654 36.8264L40.8497 34.4045L37.4393 32.3143L35.955 34.7361L39.3654 36.8264ZM37.9112 34.9338C38.7644 35.6022 39.6215 36.1782 40.4831 36.6535L42.4154 33.1512C41.7665 32.7932 41.0872 32.3406 40.3779 31.7849L37.9112 34.9338ZM40.5065 36.6662C41.3927 37.1399 42.3049 37.501 43.2416 37.7391L44.2272 33.8624C43.6274 33.71 43.0161 33.4721 42.392 33.1385L40.5065 36.6662ZM43.2416 37.7391C44.1685 37.9748 45.1087 38.0938 46.0586 38.0938V34.0938C45.446 34.0938 44.8367 34.0174 44.2272 33.8624L43.2416 37.7391ZM46.0586 38.0938C47.4406 38.0938 48.7447 37.8607 49.9228 37.3332L48.2881 33.6824C47.7214 33.9362 46.9943 34.0938 46.0586 34.0938V38.0938ZM49.9228 37.3332C51.0801 36.815 52.0604 36.0575 52.7766 35.0316L49.4968 32.7419C49.2495 33.0961 48.8756 33.4194 48.2881 33.6824L49.9228 37.3332ZM52.7723 35.0377C53.5189 33.9768 53.8789 32.7621 53.8789 31.4648H49.8789C49.8789 31.9905 49.7441 32.3904 49.5011 32.7357L52.7723 35.0377ZM53.8789 31.4648C53.8789 30.0684 53.4785 28.7536 52.5554 27.6803L49.5227 30.2885C49.7194 30.5172 49.8789 30.8561 49.8789 31.4648H53.8789ZM52.5705 27.698C51.8312 26.8179 50.9041 26.1094 49.8362 25.5515L47.9841 29.0969C48.661 29.4505 49.1532 29.8488 49.5077 30.2708L52.5705 27.698ZM49.8568 25.5624C48.9248 25.0617 47.9486 24.5981 46.929 24.1709L45.3835 27.8603C46.291 28.2405 47.1507 28.6493 47.9635 29.086L49.8568 25.5624ZM46.9608 24.1846C46.1237 23.8168 45.2998 23.4365 44.489 23.0438L42.7453 26.6437C43.6012 27.0583 44.47 27.4593 45.3517 27.8467L46.9608 24.1846ZM44.489 23.0438C43.7763 22.6985 43.1454 22.305 42.5899 21.867L40.1133 25.008C40.9119 25.6377 41.7914 26.1817 42.7453 26.6437L44.489 23.0438ZM42.6082 21.8816C42.1361 21.5003 41.7696 21.0566 41.4943 20.5416L37.9666 22.4271C38.4986 23.4226 39.2129 24.281 40.0949 24.9934L42.6082 21.8816ZM41.501 20.5541C41.2806 20.1347 41.125 19.5456 41.125 18.7109H37.125C37.125 20.0377 37.373 21.2975 37.96 22.4146L41.501 20.5541ZM41.125 18.7109C41.125 17.3604 41.54 16.3679 42.3125 15.5783L39.4531 12.7811C37.8819 14.3873 37.125 16.4156 37.125 18.7109H41.125ZM42.3123 15.5784C43.1356 14.7371 44.2684 14.1665 45.8542 13.9551L45.3255 9.9902C43.0051 10.2996 40.9998 11.2004 39.4533 12.7809L42.3123 15.5784ZM47.5898 11.9727V8.35938H43.5898V11.9727H47.5898ZM45.5898 10.3594H47.7188V6.35938H45.5898V10.3594ZM45.7188 8.35938V11.8945H49.7188V8.35938H45.7188ZM47.6419 13.8931C48.4939 13.9258 49.3532 14.0625 50.2227 14.3077L51.3085 10.4579C50.1468 10.1303 48.9749 9.94137 47.7956 9.89601L47.6419 13.8931ZM50.2457 14.314C51.111 14.547 51.9526 14.8807 52.7724 15.3187L54.6573 11.7907C53.576 11.213 52.4515 10.7655 51.2856 10.4516L50.2457 14.314ZM51.9151 12.6825L50.6846 15.2215L54.2842 16.966L55.5146 14.4269L51.9151 12.6825ZM53.5216 14.3837C52.5647 13.8033 51.5387 13.3654 50.4497 13.0698L49.4019 16.9302C50.1358 17.1294 50.8155 17.4206 51.4472 17.8038L53.5216 14.3837ZM50.4826 13.0791C49.422 12.7717 48.362 12.6094 47.3086 12.6094V16.6094C47.9479 16.6094 48.6327 16.7075 49.369 16.9209L50.4826 13.0791ZM47.3086 12.6094C45.4854 12.6094 43.8074 13.0837 42.4407 14.1847L44.95 17.2997C45.4583 16.8902 46.1891 16.6094 47.3086 16.6094V12.6094ZM42.4407 14.1847C41.0346 15.3174 40.2891 16.8653 40.2891 18.6719H44.2891C44.2891 18.0826 44.481 17.6774 44.95 17.2997L42.4407 14.1847ZM40.2891 18.6719C40.2891 19.9905 40.6773 21.2311 41.5472 22.2533L44.5934 19.6608C44.4217 19.459 44.2891 19.1761 44.2891 18.6719H40.2891ZM41.5632 22.2718C42.2914 23.1066 43.2021 23.7802 44.2442 24.317L46.0761 20.7611C45.3994 20.4125 44.9169 20.0314 44.5775 19.6423L41.5632 22.2718ZM44.2442 24.317C45.1398 24.7784 46.0852 25.2307 47.08 25.6743L48.7091 22.0211C47.7767 21.6053 46.8993 21.1852 46.0761 20.7611L44.2442 24.317ZM47.09 25.6787C47.9115 26.0397 48.7205 26.4255 49.517 26.8362L51.3502 23.281C50.48 22.8323 49.5963 22.4108 48.6991 22.0166L47.09 25.6787ZM49.5502 26.8529C50.2629 27.2038 50.8976 27.6143 51.4608 28.0818L54.0158 25.0041C53.1987 24.3258 52.297 23.7467 51.317 23.2643L49.5502 26.8529ZM51.4749 28.0934C51.971 28.4976 52.3572 28.9706 52.6469 29.5228L56.1891 27.6647C55.6454 26.6283 54.9118 25.7341 54.0016 24.9925L51.4749 28.0934ZM52.6533 29.5349C52.8799 29.9598 53.043 30.5688 53.043 31.4453H57.043C57.043 30.0822 56.7894 28.7902 56.1827 27.6526L52.6533 29.5349ZM53.043 31.4453C53.043 32.4371 52.8163 33.2491 52.4062 33.9384L55.8438 35.9835C56.6577 34.6155 57.043 33.0838 57.043 31.4453H53.043ZM52.4062 33.9384C51.9754 34.6625 51.3696 35.2701 50.5434 35.7619L52.5894 39.1991C53.9507 38.3887 55.0507 37.3167 55.8438 35.9835L52.4062 33.9384ZM50.5434 35.7619C49.7235 36.25 48.7144 36.5918 47.4728 36.7456L47.9647 40.7153C49.6658 40.5045 51.2218 40.0131 52.5894 39.1991L50.5434 35.7619ZM45.7188 38.7305V42.3438H49.7188V38.7305H45.7188ZM47.7188 40.3438H45.5898V44.3438H47.7188V40.3438ZM47.5898 42.3438V38.8086H43.5898V42.3438H47.5898ZM45.6815 36.8107C44.4748 36.7553 43.2939 36.5123 42.1319 36.0766L40.7274 39.8219C42.2738 40.4018 43.8663 40.7316 45.4982 40.8065L45.6815 36.8107ZM42.1476 36.0825C40.9885 35.6367 39.9099 35.0175 38.9074 34.2178L36.4129 37.3447C37.7281 38.3939 39.1625 39.2201 40.7117 39.8159L42.1476 36.0825Z" fill="#6956E6" mask="url(#path-2-outside-1_101_16)"/>
+                                </svg>
+                                
+                                <!-- 调整后的 SVG 图片内容 -->
+                            </svg>
+                        </div>
+                    
+                        <!-- 灰色小字体文字，居中对齐 -->
+                        <p class="text-sm text-gray-500 text-center">Transfer Other Country</p>
+                    </div>
+
+
+
+
+                    <div class="w-40 h-48 bg-white rounded-lg mb-8 flex flex-col justify-center items-center">
+                        <!-- 大号黑色粗体文字 -->
+                        <h2 class="text-xl font-bold text-black mb-4">$1380</h2>
+                    
+                        <!-- 缩小的 SVG 图片 -->
+                        <div class="w-16 h-16 mb-4">
+                            <!-- 插入您的调整后的 SVG 图片代码 -->
+                            <svg width="70" height="70" viewBox="0 0 81 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M40.5 1L1 19L2 38L4 47L7.5 54.5L12.5 63.5L18.5 71L29.5 80L42 87L54 80L64.5 71L71 63.5L75 54.5L78 46L80.5 38.5V19L40.5 1Z" fill="#6855E3" stroke="#6855E3"/>
+                                <path d="M24.5 26.5L19 33L18.5 38.5L19 43.5L30 55.5L41.5 66L52.5 55.5L58 50L63 43.5L63.5 38.5L63 33L58 26.5L52.5 26L46.5 26.5L41.5 32L36 26.5L30 26L24.5 26.5Z" fill="white" stroke="#6855E3"/>
+                                </svg>
+                                
+                                
+                                <!-- 调整后的 SVG 图片内容 -->
+                            </svg>
+                        </div>
+                    
+                        <!-- 灰色小字体文字，居中对齐 -->
+                        <p class="text-sm text-gray-500 text-center">Investment & Insurance</p>
+                    </div>
+
+
+
+
+
+
+
+                    <div class="w-40 h-48 bg-white rounded-lg mb-8 flex flex-col justify-center items-center">
+                        <!-- 大号黑色粗体文字 -->
+                        <h2 class="text-xl font-bold text-black mb-4">$1200</h2>
+                    
+                        <!-- 缩小的 SVG 图片 -->
+                        <div class="w-16 h-16 mb-4">
+                            <!-- 插入您的调整后的 SVG 图片代码 -->
+                            <svg width="70" height="70" viewBox="0 0 93 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M47 1L1 27.5L47 56.5L87 32.5V63L89 64.5H91L92.5 63V27.5L47 1Z" fill="#6758E0" stroke="#6855E3"/>
+                                <path d="M47 62.5L17.5 45.5V64L47 80.5L76.5 64V45.5L47 62.5Z" fill="#6758E0" stroke="#6758E0"/>
+                                </svg>
+                                
+                                
+                                <!-- 调整后的 SVG 图片内容 -->
+                            </svg>
+                        </div>
+                    
+                        <!-- 灰色小字体文字，居中对齐 -->
+                        <p class="text-sm text-gray-500 text-center">Kids Education & Hobbies</p>
+                    </div>
+   
+                </div>
+               
+                <div class="text-start mt-4">
+                    <h2 class="text-lg font-bold text-black mb-2">Transaction History</h2>
+                    <p class="text-gray-500 text-xs mb-4">Last 3 Months</p>
+                </div>
+
+
+                <div class="flex items-start mb-4">
+                    <!-- Custom SVG in Gray Circle -->
+                    <div class="w-8 h-8 lg:w-10 lg:h-10 bg-gray-500 rounded-full mr-2 flex items-center justify-center">
+                        <!-- Custom SVG Here -->
+                    </div>
+                    <p class="text-xs lg:text-sm text-gray-500">James Smith<span class="mx-3"></span>Graphic Design<span class="mx-3"></span>29/06/22<span class="mx-3"></span>$259.50<span class="mx-1"></span><span class="text-purple-600">Completed</span></p>
+                </div>
+               
+                <div class="flex items-start mb-4">
+                    <!-- Custom SVG in Gray Circle -->
+                    <div class="w-8 h-8 lg:w-10 lg:h-10 bg-gray-500 rounded-full mr-2 flex items-center justify-center">
+                        <!-- Custom SVG Here -->
+                    </div>
+                    <p class="text-xs lg:text-sm text-gray-500">Robert William<span class="mx-3"></span>Photo Editing<span class="mx-3"></span>25/06/22<span class="mx-3"></span>$490.00<span class="mx-1"></span><span class="text-pink-600">Reviwed</span></p>
+                </div>
+               
+               
+               
+                <div class="flex items-center mb-4">
+                    <!-- Custom SVG in Gray Circle -->
+                    <div class="w-8 h-8 lg:w-10 lg:h-10 bg-gray-500 rounded-full mr-2 flex items-center justify-center">
+                        <!-- Custom SVG Here -->
+                    </div>
+                    <p class="text-xs lg:text-sm text-gray-500">Linda Brown<span class="mx-3"></span>Financial Planner<span class="mx-3"></span>21/06/22<span class="mx-3"></span>$374.00<span class="mx-1"></span><span class="text-purple-600">Completed</span></p>
+                </div>
+
+
+
+                <div class="flex items-center mb-4">
+                    <!-- Custom SVG in Gray Circle -->
+                    <div class="w-8 h-8 lg:w-10 lg:h-10 bg-gray-500 rounded-full mr-2 flex items-center justify-center">
+                        <!-- Custom SVG Here -->
+                    </div>
+                    <p class="text-xs lg:text-sm text-gray-500">Michael Brown<span class="mx-3"></span>Architech Services<span class="mx-3"></span>17/06/22<span class="mx-3"></span>$842.00<span class="mx-1"></span><span class="text-purple-600">Completed</span></p>
+                </div>
+
+                <div class="text-start mt-4">
+                    <h2 class="text-lg font-bold text-black mb-2">Balance</h2>
+                    <p class="text-gray-500 text-xs mb-4">Last 12 Months</p>
+                </div>
+             </div>
+
+             
+             
+            <!-- Dark Purple Section (1/3rd) -->
+            <div class="lg:flex-1 bg-purple-300 p-3 flex-grow">
+
+                <div class="flex justify-center">
+                    <div class="bg-purple-800 rounded-lg p-4 w-full max-w-xl md:max-w-2xl lg:max-w-3xl xl:max-w-4xl">
+                        <div class="text-white text-xl font-bold mb-2">**** **** **** 1234</div>
+                        <div class="text-white text-sm mb-4">AVAILABLE FUNDS</div>
+                        <div class="flex justify-between items-center mb-4">
+                            <div class="text-white text-base font-bold">$75,389.25</div>
+                            <svg width="35" height="28" viewBox="0 0 47 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                
+                                    <rect x="2" y="2" width="43" height="34" rx="6" stroke="#77B9FF" stroke-width="4"/>
+                                    <mask id="path-2-inside-1_101_24" fill="white">
+                                    <rect y="6" width="19" height="9" rx="3"/>
+                                    </mask>
+                                    <rect y="6" width="19" height="9" rx="3" stroke="#77B9FF" stroke-width="8" mask="url(#path-2-inside-1_101_24)"/>
+                                    <rect x="3" y="26" width="15" height="10" rx="4" stroke="#77B9FF" stroke-width="4"/>
+                                    <rect x="29" y="26" width="15" height="10" rx="4" stroke="#77B9FF" stroke-width="4"/>
+                                    <mask id="path-5-inside-2_101_24" fill="white">
+                                    <rect x="27" y="6" width="19" height="9" rx="3"/>
+                                    </mask>
+                                    <rect x="27" y="6" width="19" height="9" rx="3" stroke="#77B9FF" stroke-width="8" mask="url(#path-5-inside-2_101_24)"/>
+                                    <mask id="path-6-inside-3_101_24" fill="white">
+                                    <rect y="12" width="19" height="14" rx="3"/>
+                                    </mask>
+                                    <rect y="12" width="19" height="14" rx="3" stroke="#77B9FF" stroke-width="8" mask="url(#path-6-inside-3_101_24)"/>
+                                    <mask id="path-7-inside-4_101_24" fill="white">
+                                    <rect x="27" y="12" width="19" height="14" rx="3"/>
+                                    </mask>
+                                    <rect x="27" y="12" width="19" height="14" rx="3" stroke="#77B9FF" stroke-width="8" mask="url(#path-7-inside-4_101_24)"/>
+                                    </svg>
+                                    
+                                <!-- SVG图标的代码 -->
+                            </svg>
+                        </div>
+                        <div class="text-white text-lg font-bold">CREDIT</div>
+                        <div class="flex justify-between items-center mb-1">
+                            <div class="text-white text-xs">EXPIRES</div>
+                            <div class="text-white text-xs">01/23</div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div class="text-white text-xs">CVV</div>
+                            <div class="text-white text-xs">123</div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="text-start mt-4">
+                    <h2 class="text-lg font-bold text-black mb-2">Schedule Payment</h2>
+                    <p class="text-gray-500 text-xs mb-4">August 2022</p>
+                    
+                    <div class="flex flex-wrap justify-center gap-4">
+                        <!-- 第一个卡片 -->
+                        <div class="flex items-center justify-between w-80">
+                            <div>
+                                <!-- SVG图标 -->
+                                <svg width="60" height="60" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    
+                                        <rect width="77" height="77" rx="20" fill="#E0DEF3"/>
+                                        <path d="M37.5489 20.5299C38.3376 19.6983 39.6624 19.6983 40.4511 20.5299L55.7161 36.6236C56.9248 37.898 56.0215 40 54.265 40H23.735C21.9785 40 21.0752 37.898 22.2839 36.6236L37.5489 20.5299Z" fill="#6758E0"/>
+                                        <rect x="26" y="39" width="27" height="17" rx="2" fill="#6758E0"/>
+                                        <rect x="34" y="43" width="10" height="15" rx="2" fill="#E0DEF3"/>
+                                        </svg>
+                                        
+                                    <!-- SVG图标的路径等 -->
+                                </svg>
+                            </div>
+                            <div class="flex flex-col ml-4">
+                                <!-- 右侧文本 -->
+                                <p class="text-xs text-gray-700 font-bold">Home Cleaning</p>
+                                <p class="text-xs text-gray-400">12Hrs - pending</p>
+                            </div>
+                            <div class="text-lg font-bold text-black">$497</div>
+                        </div>
+                        
+                        <!-- 第二个卡片 -->
+                        <div class="flex items-center justify-between w-80">
+                            <div>
+                                <!-- SVG图标 -->
+                                <svg width="60" height="60" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    
+                                        <rect width="77" height="77" rx="20" fill="#E0DEF3"/>
+                                        <path d="M38.6066 22L19 33.2677L38.6066 45.5984L55.6557 35.3937V48.3622L56.5082 49H57.3607L58 48.3622V33.2677L38.6066 22Z" fill="#6758E0" stroke="#6855E3"/>
+                                        <path d="M39 48.2857L26 41V48.9286L39 56L52 48.9286V41L39 48.2857Z" fill="#6758E0" stroke="#6758E0"/>
+                                        </svg>
+                                        
+                                        
+                                    <!-- SVG图标的路径等 -->
+                                </svg>
+                            </div>
+                            <div class="flex flex-col ml-4">
+                                <!-- 右侧文本 -->
+                                <p class="text-xs text-gray-700 font-bold">Kids Education</p>
+                                <p class="text-xs text-gray-400">2 Days - pending</p>
+                            </div>
+                            <div class="text-lg font-bold text-black">$136</div>
+                        </div>
+                    
+                        <!-- 第三个卡片 -->
+                        <div class="flex items-center justify-between w-80">
+                            <div>
+                                <!-- SVG图标 -->
+                                <svg width="60" height="60" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    
+                                        <rect width="77" height="77" rx="20" fill="#E0DEF3"/>
+                                        <path d="M39 28V23H30.5L29 23.5L27 25.5L25.5 28L25 31.5H18.5L18 32.5V33.5V34.5L18.5 35H21.5V36L19.5 39V45H21.5V51.5L23 53L25 53.5L27 53L28 52.5L29 51.5V48H39V28Z" fill="#6855EA" stroke="#6758E0"/>
+                                        <path d="M39.2023 27.9995L39.2441 23.0001L47.9022 23.0724L49.426 23.5851L51.4465 25.6019L52.9535 28.1144L52.9999 31.5001L59.9999 31.5001L60.4999 32.5001L60.5 33.5L60.4999 34.5L60.0253 35.1732L56.9695 35.1477L56.9611 36.1476L58.9733 39.1643L58.9232 45.1636L56.886 45.1466L56.8317 51.646L55.2913 53.133L53.5 53.5L51.2169 53.099L50 52.5L49.1922 51.5822L49.2214 48.0825L39.0353 47.9975L39.2023 27.9995Z" fill="#6855EA" stroke="#6758E0"/>
+                                        <path d="M31 42V44H22V39H26.8462L29.6154 40.5L31 42Z" fill="white" stroke="#6758E0"/>
+                                        <path d="M48 42V44H57V39H52.1538L49.3846 40.5L48 42Z" fill="white" stroke="#6758E0"/>
+                                        <path d="M50 34.5H28L28.5 32.5L29 31L30.5 29L32.5 27.5L39 27L45.5 27.5L47.5 29L48.5 30.5L49.5 32.5L50 34.5Z" fill="white" stroke="#6758E0"/>
+                                        </svg>
+                                        
+                                    <!-- SVG图标的路径等 -->
+                                </svg>
+                            </div>
+                            <div class="flex flex-col ml-4">
+                                <!-- 右侧文本 -->
+                                <p class="text-xs text-gray-700 font-bold">Home Cleaning</p>
+                                <p class="text-xs text-gray-400">12Hrs - pending</p>
+                            </div>
+                            <div class="text-lg font-bold text-black">$497</div>
+                        </div>
+                    </div>
+                    
+
+
+
+
+
+        <!--终于！！！-->
+        <div class="text-start mt-4">
+            <h2 class="text-lg font-bold text-black mb-2">Recent Payments</h2>
+            <p class="text-gray-500 text-xs mb-4">Last 30 Days</p>
+            
+            <div class="flex flex-wrap justify-center gap-4">
+                <!-- 第一个卡片 -->
+                <div class="flex items-center justify-between w-80">
+                    <div>
+                        <!-- SVG图标 -->
+                        <svg width="60" height="60" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           
+                                <rect width="77" height="77" rx="20" fill="#E0DEF3"/>
+                                <path d="M46.5 18H29.5L25 39H34L32 59L52.5 31H44L46.5 18Z" fill="#6855E3" stroke="#6758E0"/>  
+                            <!-- SVG图标的路径等 -->
+                        </svg>
+                    </div>
+                    <div class="flex flex-col ml-4">
+                        <!-- 右侧文本 -->
+                        <p class="text-xs text-gray-700 font-bold">Electric Bill</p>
+                        <p class="text-xs text-gray-400">20/07/22 - Completed</p>
+                    </div>
+                    <div class="text-lg font-bold text-black">$221</div>
+                </div>
+                
+                <!-- 第二个卡片 -->
+                <div class="flex items-center justify-between w-80">
+                    <div>
+                        <!-- SVG图标 -->
+                        <svg width="60" height="60" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           
+                                <rect width="77" height="77" rx="20" fill="#E0DEF3"/>
+                                <path d="M27.8 35.2169L39.4667 17L49.7333 35.2169L51.6 39.7711L53 44.8313V48L52 51.5L51 53.5L49.2667 55.4578L47 57.5L44.1333 59H35L31 57L28 54L27 52.5L25.9333 50.9036L25 48V44.8313L25.9333 39.7711L27.8 35.2169Z" fill="#6F62D2" stroke="#6758E0"/>
+                                <g filter="url(#filter0_d_101_62)">
+                                <path d="M39 53.5H41L43.5 53L45.5 52L47.5 50.5L48.5 48.5L49 47V45.5V44" stroke="white" stroke-opacity="0.74" stroke-width="2" shape-rendering="crispEdges"/>
+                                </g>
+                                <defs>
+                                <filter id="filter0_d_101_62" x="35" y="44" width="19" height="18.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                <feOffset dy="4"/>
+                                <feGaussianBlur stdDeviation="2"/>
+                                <feComposite in2="hardAlpha" operator="out"/>
+                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_101_62"/>
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_101_62" result="shape"/>
+                                </filter>
+                                </defs>
+                                </svg>
+                                
+                    </div>
+                    <div class="flex flex-col ml-4">
+                        <!-- 右侧文本 -->
+                        <p class="text-xs text-gray-700 font-bold">Water Bill</p>
+                        <p class="text-xs text-gray-400">27/07/22 - Completed</p>
+                    </div>
+                    <div class="text-lg font-bold text-black">$189</div>
+                </div>
+            
+                <!-- 第三个卡片 -->
+                <div class="flex items-center justify-between w-80">
+                    <div>
+                        <!-- SVG图标 -->
+                        <svg width="60" height="60" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           
+                                <rect width="77" height="77" rx="20" fill="#E0DEF3"/>
+                                <path d="M35 48L46.5 24L43.5 49.5L42.5 51.5L40.5 52.5H38.5L36.5 51.5L35.5 50L35 48Z" fill="#6957DF" stroke="#6758E0" stroke-width="2"/>
+                                <path d="M23 36.5L18 32L22 28L28.5 25L35 24L43 24.5L40.5 29H35L31 30L28 31.5L23 36.5Z" fill="#6758E0" stroke="#6758E0" stroke-width="2"/>
+                                <path d="M48.5 31.5L49 26L51.5 27L54 28.5L57 30.5L59 32L56 36.5L48.5 31.5Z" fill="#6758E0" stroke="#6758E0" stroke-width="2"/>
+                                <path d="M30.5 44L26 40L28 38L30.5 36L34.5 34.5H38.5L36 39L33.5 40.5L32 42L30.5 44Z" fill="#6758E0" stroke="#6758E0" stroke-width="2"/>
+                                <path d="M47.5 41.5V39.5L48 36L51 37.5L53.5 39.5L51 43.5L47.5 41.5Z" fill="#6758E0" stroke="#6758E0" stroke-width="2"/>
+                                </svg>
+                                
+                            <!-- SVG图标的路径等 -->
+                        </svg>
+                    </div>
+                    <div class="flex flex-col ml-4">
+                        <!-- 右侧文本 -->
+                        <p class="text-xs text-gray-700 font-bold">Home Internet Bill</p>
+                        <p class="text-xs text-gray-400">27/07/22 - Completed</p>
+                    </div>
+                    <div class="text-lg font-bold text-black">$75</div>
+                </div>
+            </div>
+            
+
+
+            
+           
+
+
+
+
+
+
+
+                
+                
+                
+                
+                
+                <!-- Content for the darker purple section goes here -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
